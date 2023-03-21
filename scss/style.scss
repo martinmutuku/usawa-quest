@@ -1,0 +1,100 @@
+@import './resets';
+@import './variables';
+
+body {
+    background-color: $body-background-color;
+}
+.container {
+    max-width: 80vw;
+    margin: 0 10vw;
+}
+header {
+    nav {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            li {
+                list-style-type: none;
+                padding: 8px;
+
+                a {
+                    text-decoration: none;
+                    color: $green-color;
+                    font-size: 1.2rem;
+                    font-weight: $bold-text;
+                    &:hover {
+                        background-color: $gray-color;
+                    }
+                }
+            }
+        }    
+    }
+}
+.usawa-bana {
+    height: 400px;
+    background-color: $yellow-color;
+}
+form {
+    width: 60vw;
+    background-color: $gray-color;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px $green-color;
+    font-size: 1.2rem;
+    font-weight: $bold-text;
+    p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    input {
+        outline-color: $green-color;
+        padding: 2px;
+        border-radius: 4px;
+
+    }
+    .btn-success{
+        background-color: $green-color;
+        color: $black-color;
+        font-weight: $bold-text;
+    }
+}
+footer {
+    .copy {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+ul {
+    li {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+        color: $black-color;
+    }
+}
+.fom {
+    width: auto;
+    padding: 8px;
+}
+hr {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid $black-color;
+}
+}
+.icons i {
+    font-size: 2rem;
+    margin: 10px;
+    &:hover {
+        color: $green-color;
+    }
+}
+
+.social i {
+    margin: 5px;
+    color: $green-color;
+}

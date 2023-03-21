@@ -1,4 +1,128 @@
 <!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/e2eb95f490.js" crossorigin="anonymous"></script>
+    <title>New Usawa Web Design</title>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav>
+                <h1>Usawa Africa</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">What We Do</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Volunteer</a></li>
+                </ul>
+                <div class="social">
+                        <span><i class="fab fa-facebook"></i></span>
+                        <span ><i class="fab fa-instagram"></i></span>
+                        <span ><i class="fab fa-tiktok"></i></span>
+                        <span ><i class="fab fa-twitter"></i></span>
+                        <span><i class="fab fa-youtube"></i></span>
+                        <p>Contact Us</p>
+                        <p>Tell: +254712345678</p>
+                </div>
+            </nav>
+        </header> 
+            <div class="usawa-bana">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+            </div>
+        <form action="#">
+            <p>MPESA Donation </p>
+            <label for="amount">Amount (Ksh): </label>
+            <br>
+            <input type="text" name="amount" id="amount" size="75">
+            <br>
+            <br>
+            <div class="row">
+                <div class="fname col-md-6">
+                    <label for="firstname">First Name: </label>
+                    <br>
+                    <input type="text" name="firstname" id="firstname" size="30">
+                </div>
+                    <div class="lname col-md-6">
+                        <label for="lastname">Last Name: </label>
+                        <br>
+                        <input type="text" name="lastname" id="lastname" size="30">
+                    </div>
+            </div>
+            <br>
+            <label for="phonenumber">Phone Number: </label>
+            <br>
+            <input type="text" name="phonenumber" id="phonenumber" size="75">
+            <br>
+            <br>
+                <button type="submit" class="btn btn-success text-center">Success</button>
+        </form>
+    </main>
+    <footer >
+        <div class="row mt-5 text-center">
+            <div class="col-md-2">
+                <h3>LOGO</h3>
+            </div>
+            <div class="col-md-2">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">About Usawa</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3>Affiliates</h3>
+                <ul>
+                    <li><a href="">Unknown</a></li>
+                    <li><a href="">Undeclared</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h3>General</h3> 
+                <ul>
+                    <li><a href="">Tenders</a></li>
+                    <li><a href="">Publication</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+               <h3>Newsletter</h3> 
+               <p>Get posted, Subscribe Now</p>
+               <form class="fom" action="">
+                <label for="email">Enter Your Email: </label>
+                    <br>
+                <input type="email" name="email" id="email">
+                    <br>              
+                      <button type="button" class="btn btn-success item-align-center mt-3">Subscribe</button>
+               </form>
+               <div class="icons mt-4">
+                <span title="Facebook"><i class="fab fa-facebook"></i></span>
+                <span title="Instagram"><i class="fab fa-instagram"></i></span>
+                <span title="Tiktok"><i class="fab fa-tiktok"></i></span>
+                <span title="fa-twitter"><i class="fab fa-twitter"></i></span>
+                <span title="Youtube"><i class="fab fa-youtube"></i></span>
+               </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copy mt-3">
+            <p>&copy;2022 Usawa Quest Africa</p>
+            <p>Privacy Polcy</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Usawa Africa</title>
@@ -13,7 +137,6 @@
                 <div class="menu">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
-                        <li><a href="about.html">ABOUT USAWA QUEST</a></li>
                         <li><a href="our_team.html">OUR TEAM</a></li>
                         <li><a href="services.html">PARTNERSHIPS</a></li>
                         <li><a href="portifolio.html">EXPERIENCE</a></li>
@@ -31,6 +154,7 @@
                 <p class="par"> Usawa Africa operates across the public, private and not for profit employment sectors in Kenya &amp; across Africa, bringing more than 20 years in expertise<br>
                 </p>
                 <button class="cn"><a href="#">JOIN US</a></button>
+              <form action="index.php" method="post">
                 <div class="form">
                     <h2>Login Here</h2>
                     <input type="email" name="email" placeholder="Enter Email Here">
@@ -43,7 +167,8 @@
                     <p class="liw">Log in With</p>
                 </div>
                 
+              </form>
             </div>
         </div>
     </body>
-</html>
+</html> -->
