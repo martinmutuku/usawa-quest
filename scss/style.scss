@@ -30,9 +30,45 @@ header {
         }    
     }
 }
+@font-face {
+    font-family: Pacifico;
+    src: url(sansation_bold.woff);
+    font-weight: bold;
+  }
+  
 .usawa-bana {
+    position: relative;
     height: 400px;
     background-color: $yellow-color;
+    z-index: -2;
+    .overlay-div {
+        position: absolute;
+        width: 60%;
+        height: 320px;
+        background-color: $green-color;
+        color:$white-color;
+        float: left;
+        font-size: 1.4rem;
+        margin-top: 80px;
+        border-radius: 8px;
+        z-index:5;
+        h3 {
+            font-family: 'Times New Roman', Times, serif
+        }
+        p {
+            font-family: pacifico;
+        }
+    }
+    .bana-img {
+        width: 45%;
+        float:right;
+        img {
+            height: 350px;
+            width: fit-content;
+            position: absolute;
+            z-index: 2;
+        }
+    }
 }
 form {
     background-color: $gray-color;
@@ -51,11 +87,15 @@ form {
         border-radius: 4px;
 
     }
-    .btn-success, .bg-success{
+    .btn-success{
         background-color: $green-color !important;
         color: $black-color;
         font-weight: $bold-text;
     }
+}
+.bg-green {
+    background-color: $green-color !important;
+    
 }
 footer {
     .copy {
