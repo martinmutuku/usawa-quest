@@ -2,12 +2,9 @@
 @import './variables';
 
 body {
-    background-color: $body-background-color;
+    background-color: $white-color;
 }
-.container {
-    max-width: 80vw;
-    margin: 0 10vw;
-}
+
 header {
     nav {
         height: 200px;
@@ -38,7 +35,6 @@ header {
     background-color: $yellow-color;
 }
 form {
-    width: 60vw;
     background-color: $gray-color;
     padding: 10px 20px;
     border-radius: 4px;
@@ -55,8 +51,8 @@ form {
         border-radius: 4px;
 
     }
-    .btn-success{
-        background-color: $green-color;
+    .btn-success, .bg-success{
+        background-color: $green-color !important;
         color: $black-color;
         font-weight: $bold-text;
     }
@@ -97,4 +93,30 @@ hr {
 .social i {
     margin: 5px;
     color: $green-color;
+}
+.payment > img, form img {
+    max-width: 100px;
+    height: 60px;
+}
+form img {
+    max-width: 80px;
+    height: 40px;
+}
+.full-image img {
+    width: 80vw;
+    height: 70vh;
+}
+.card-img-top {
+    width: 300px;
+    margin: 10px auto;
+}
+.card-title  {
+color: $white-color;
+margin: 14px;
+}
+.featured{
+    width: 80vw !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
