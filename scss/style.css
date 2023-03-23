@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+header nav {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav img {
+  height: 60px;
+  width: 60px;
+  margin: 20px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style-type: none;
+  padding: 8px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(4, 242, 4);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+header nav ul li a:hover {
+  background-color: rgb(160, 159, 159);
+}
+
+.usawa-bana {
+  height: 400px;
+  background-color: rgb(246, 255, 0);
+}
+
+form {
+  background-color: rgb(160, 159, 159);
+  padding: 10px 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgb(4, 242, 4);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+form p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+form input {
+  outline-color: rgb(4, 242, 4);
+  padding: 2px;
+  border-radius: 4px;
+}
+form .btn-success, form .bg-success {
+  background-color: rgb(4, 242, 4) !important;
+  color: rgb(39, 39, 39);
+  font-weight: 600;
+}
+
+footer .copy {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer ul a {
+  text-decoration: none;
+  color: rgb(39, 39, 39);
+}
+footer .fom {
+  width: auto;
+  padding: 8px;
+}
+footer hr {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid rgb(39, 39, 39);
+}
+
+.icons i {
+  font-size: 2rem;
+  margin: 10px;
+}
+.icons i:hover {
+  color: rgb(4, 242, 4);
+}
+
+.social i {
+  margin: 5px;
+  color: rgb(4, 242, 4);
+}
+
+.payment > img, form img {
+  max-width: 100px;
+  height: 60px;
+}
+
+form img {
+  max-width: 80px;
+  height: 40px;
+}
+
+.full-image img {
+  width: 80vw;
+  height: 70vh;
+}
+
+.card-img-top {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.card-title {
+  color: #fff;
+  margin: 14px;
+}
+
+.featured {
+  width: 80vw !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
