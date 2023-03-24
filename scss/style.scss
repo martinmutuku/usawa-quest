@@ -1,20 +1,25 @@
 @import './resets';
 @import './variables';
 
+@font-face {
+    font-family: pacifico;
+    src: url(Pacifico.ttf);
+    font-weight: bold;
+  }
 body {
     background-color: $white-color;
 }
 
 header {
     nav {
-        height: 100px;
+        height: 85px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         img{
             height: 60px;
             width: 60px;
-            margin: 20px;
+            margin: 10px;
             }
         ul {
             display: flex;
@@ -35,11 +40,7 @@ header {
         }    
     }
 }
-@font-face {
-    font-family: Pacifico;
-    src: url(sansation_bold.woff);
-    font-weight: bold;
-  }
+
   
 .usawa-bana {
     position: relative;
@@ -54,7 +55,7 @@ header {
         color:$white-color;
         float: left;
         font-size: 1.4rem;
-        margin-top: 80px;
+        margin-top: 100px;
         border-radius: 8px;
         z-index:5;
         h3 {
@@ -98,6 +99,21 @@ form {
         font-weight: $bold-text;
     }
 }
+.payment {
+    background-color: $gray-color;
+    padding: 10px 20px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px $green-color;
+    h4 {
+        color: $green-color;
+    }
+}
+.payment > img, form img {
+    max-width: 100px;
+    height: 60px;
+    margin: 10px 14px;
+}
 .bg-green {
     background-color: $green-color !important;
     
@@ -139,16 +155,13 @@ hr {
     margin: 5px;
     color: $green-color;
 }
-.payment > img, form img {
-    max-width: 100px;
-    height: 60px;
-}
+
 form img {
     max-width: 80px;
     height: 40px;
 }
 .full-image img {
-    width: 80vw;
+    width: 100vw;
     height: 70vh;
 }
 .card-img-top {
@@ -165,3 +178,7 @@ margin: 14px;
     align-items: center;
     justify-content: space-between;
 }
+
+
+
+  
