@@ -20,6 +20,12 @@ header {
         svg {
             margin-left: 15px;
         }
+        img{
+           height: 100px;
+           width: 120px; 
+           margin-left: 15px;
+
+        }
         ul {
             display: flex;
             li {
@@ -132,6 +138,10 @@ form {
     
 }
 footer {
+    img{
+        height: 100px;
+        width: 120px;
+    }
     .copy {
     padding: 15px;
     display: flex;
