@@ -7,26 +7,25 @@
     font-weight: bold;
   }
 body {
-    background-color: $white-color;
+    background-color: $gray-color;
 }
 
 header {
     nav {
-        height: 85px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        img{
-            height: 60px;
-            width: 60px;
-            margin: 10px;
-            }
+        background-color: $white-color;
+        svg {
+            margin-left: 15px;
+        }
         ul {
             display: flex;
             li {
                 list-style-type: none;
-                padding: 8px;
-
+                padding: 60px 10px 20px 8px;
+                margin-right: 15px;
                 a {
                     text-decoration: none;
                     color: $green-color;
@@ -34,10 +33,22 @@ header {
                     font-weight: $bold-text;
                     &:hover {
                         background-color: $gray-color;
+                        padding: 10px 6px;
+                        color: $black-color;
+                        border-radius: 4px;
+                        text-transform: uppercase;
+                        box-shadow: 2px 2px 2px 2px $green-color;
                     }
                 }
             }
-        }    
+        }
+        .social {
+            padding: 10px;
+         i {
+            margin: 5px;
+            color: $green-color;
+        }  
+    }          
     }
 }
 
@@ -52,14 +63,16 @@ header {
         width: 60%;
         height: 320px;
         background-color: $green-color;
-        color:$white-color;
         float: left;
         font-size: 1.4rem;
         margin-top: 100px;
         border-radius: 8px;
         z-index:5;
         h3 {
-            font-family: 'Times New Roman', Times, serif
+            color:$white-color;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 15px;
+            text-shadow: 2px 1px $gray-color;
         }
         p {
             font-family: pacifico;
@@ -151,10 +164,6 @@ hr {
     }
 }
 
-.social i {
-    margin: 5px;
-    color: $green-color;
-}
 
 form img {
     max-width: 80px;
@@ -168,10 +177,7 @@ form img {
     width: 300px;
     margin: 10px auto;
 }
-.card-title  {
-color: $white-color;
-margin: 14px;
-}
+
 .featured{
     width: 80vw !important;
     display: flex;
@@ -180,5 +186,3 @@ margin: 14px;
 }
 
 
-
-  
