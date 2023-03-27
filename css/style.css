@@ -79,13 +79,13 @@ header nav .social i:hover {
   height: 320px;
   background-color: #09E820;
   float: left;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 100px;
   border-radius: 8px;
   z-index: 5;
+  padding: 20px;
 }
 .usawa-bana .overlay-div h3 {
-  padding: 10px;
   color: #fff;
   font-family: "Times New Roman", Times, serif;
   text-shadow: 2px 2px rgb(206, 203, 203);
@@ -239,8 +239,9 @@ form img {
 }
 
 .featured {
-  width: 80vw !important;
-  display: flex;
+  margin: 10px;
   align-items: center;
-  justify-content: space-between;
+}
+.featured .row {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
