@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: pacifico;
-  src: url(Pacifico.ttf);
+  src: url("Pacifico.ttf");
   font-weight: bold;
 }
 body {
@@ -25,8 +25,8 @@ header nav svg {
 }
 header nav img {
   height: 100px;
-  width: 120px;
-  margin-left: 15px;
+  width: 140px;
+  margin-left: 25px;
 }
 header nav ul {
   display: flex;
@@ -63,6 +63,7 @@ header nav .social i {
   height: 400px;
   background-color: #E1FF26;
   z-index: -2;
+  padding: 1px;
 }
 .usawa-bana .overlay-div {
   position: absolute;
@@ -76,10 +77,10 @@ header nav .social i {
   z-index: 5;
 }
 .usawa-bana .overlay-div h3 {
+  padding: 10px;
   color: #fff;
   font-family: "Times New Roman", Times, serif;
-  margin: 15px;
-  text-shadow: 2px 1px rgb(206, 203, 203);
+  text-shadow: 2px 2px rgb(206, 203, 203);
 }
 .usawa-bana .overlay-div p {
   font-family: pacifico;
@@ -93,6 +94,7 @@ header nav .social i {
   width: 50vw;
   position: absolute;
   z-index: 2;
+  padding-right: 0.6vw;
 }
 
 form {
@@ -123,7 +125,7 @@ form .btn-success {
   padding: 10px 20px;
   height: auto;
   border-radius: 4px;
-  box-shadow: 2px 2px 2px 2px #09E820;
+  box-shadow: 2px 1px 1px 1px #09E820;
 }
 .payment h4 {
   color: #09E820;
@@ -139,9 +141,13 @@ form .btn-success {
   background-color: #09E820 !important;
 }
 
+footer {
+  background-color: #fff;
+  padding: 10px;
+}
 footer img {
-  height: 100px;
-  width: 120px;
+  height: 120px;
+  width: 160px;
 }
 footer .copy {
   padding: 15px;

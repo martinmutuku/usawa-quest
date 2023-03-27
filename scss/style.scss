@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: pacifico;
-    src: url(Pacifico.ttf);
+    src: url('Pacifico.ttf');
     font-weight: bold;
   }
 body {
@@ -22,8 +22,8 @@ header {
         }
         img{
            height: 100px;
-           width: 120px; 
-           margin-left: 15px;
+           width: 140px; 
+           margin-left: 25px;
 
         }
         ul {
@@ -64,6 +64,7 @@ header {
     height: 400px;
     background-color: $yellow-color;
     z-index: -2;
+    padding: 1px;
     .overlay-div {
         position: absolute;
         width: 60%;
@@ -75,10 +76,10 @@ header {
         border-radius: 8px;
         z-index:5;
         h3 {
+            padding: 10px;
             color:$white-color;
             font-family: 'Times New Roman', Times, serif;
-            margin: 15px;
-            text-shadow: 2px 1px $gray-color;
+            text-shadow: 2px 2px $gray-color;
         }
         p {
             font-family: pacifico;
@@ -92,6 +93,7 @@ header {
             width: 50vw;
             position: absolute;
             z-index: 2;
+            padding-right: 0.6vw;
         }
     }
 }
@@ -123,7 +125,7 @@ form {
     padding: 10px 20px;
     height: auto;
     border-radius: 4px;
-    box-shadow: 2px 2px 2px 2px $green-color;
+    box-shadow: 2px 1px 1px 1px $green-color;
     h4 {
         color: $green-color;
     }
@@ -138,9 +140,11 @@ form {
     
 }
 footer {
+    background-color: $white-color;
+    padding: 10px;
     img{
-        height: 100px;
-        width: 120px;
+        height: 120px;
+        width: 160px;
     }
     .copy {
     padding: 15px;
