@@ -11,53 +11,67 @@
     <title>Contact US</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/index.html"><img src="/images/logo.png" alt="Usawa Logo Image"></a>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about-us.html">Who We Are</a></li>
-                <li><a href="/what-we-do.html">What We Do</a></li>
-                <li><a href="/donate.html">Donate</a></li>
-                <li><a href="/volunteer.html">Volunteer</a></li>
-                <li><a href="/contact-us.html">Contact Us</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><img src="/images/logo.png" alt="Usawa Logo Image"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about-us.html">Who We Are</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/what-we-do.html">What We Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/donate.html">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/volunteer.html">Volunteer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact-us.html">Contact Us</a>
+              </li>
             </ul>
-            <div class="social">
-                <p class="heading3">Follow Us</p>
-                    <span><i class="fab fa-facebook"></i></span>
-                    <span ><i class="fab fa-instagram"></i></span>
-                    <span ><i class="fab fa-tiktok"></i></span>
-                    <span ><i class="fab fa-twitter"></i></span>
-                    <span><i class="fab fa-youtube"></i></span>
-                    <p class="heading2"><big>Call: </big> <strong style="font-size: 1.3rem
-                    ;">+254712345678</strong></p>
-            </div>
-        </nav>
-    </header> 
+         
+          </div>
+        </div>
+        <div class="social">
+            <p class="heading3">Follow Us</p>
+                <span><i class="fab fa-facebook"></i></span>
+                <span ><i class="fab fa-instagram"></i></span>
+                <span ><i class="fab fa-tiktok"></i></span>
+                <span ><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-youtube"></i></span>
+                <p >Call:  <span>+254712345678</span></p>
+        </div>
+      </nav>
         <div class="form-container">
-            <form onsubmit="sendEmail(); reset(); return false">
-          
+            <form action="https://formsubmit.co/5e92ff0ca471c7b6a597393ec11a3126 " method="POST" target="_blank" >
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="First Name" placeholder="Your first name...">
           
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              
+              <input type="text" id="lname" name="Last Name" placeholder="Your last name..">
+
               <label for="country">Country</label>
-              <select id="country" name="country">
+              <select id="country" name="Country">
                   <option value="australia">Australia</option>
                   <option value="canada">Canada</option>
                   <option value="usa">USA</option>
                 </select>
                 
                 <label for="subject">Subject</label>
-                <input type="text" id="subject name="subject placeholder="Your  subject...">
+                <input type="text" id="subject" name="Subject" placeholder="Your  subject...">
 
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
+              <textarea id="message" name="Message" placeholder="Write something.." style="height:200px"></textarea>
+              <button type="submit" class="btn btn-success">Submit</button>
             </form>
           </div>
     <footer >
@@ -116,7 +130,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://smtpjs.com/v3/smtp.js">
+    <!-- <script src="https://smtpjs.com/v3/smtp.js">
     </script>
     <script>
         function sendEmail(){
@@ -135,6 +149,6 @@
                     message => alert("Mesage Sent Successfully")
                     );
         }
-    </script>
+    </script> -->
 </body>
 </html>

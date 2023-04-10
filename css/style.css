@@ -4,66 +4,54 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: pacifico;
-  src: url("Pacifico.ttf");
-  font-weight: bold;
-}
 body {
   background-color: rgb(206, 203, 203);
 }
 
-header nav {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
+.navbar-light, .bg-light {
+  background-color: #fff !important;
 }
-header nav svg {
-  margin-left: 15px;
+
+.navbar-brand img {
+  height: 90px;
 }
-header nav img {
-  height: 100px;
-  width: 140px;
-  margin-left: 25px;
-}
-header nav ul {
-  display: flex;
-}
-header nav ul li {
-  list-style-type: none;
-  padding: 60px 10px 20px 8px;
-  margin-right: 15px;
-}
-header nav ul li a {
+
+.nav-link {
   text-decoration: none;
   color: #09E820;
-  font-size: 1.2rem;
   font-weight: 600;
 }
-header nav ul li a:hover {
+.nav-link:hover, .nav-link .active {
   background-color: rgb(206, 203, 203);
-  padding: 10px 6px;
+  padding: 4px;
   color: rgb(39, 39, 39);
   border-radius: 4px;
-  text-transform: uppercase;
   box-shadow: 2px 2px 2px 2px #09E820;
 }
-header nav .social {
+
+.social {
+  width: 350px;
   padding: 10px;
 }
-header nav .social p {
+.social p {
   font-weight: 600;
-  margin: 4px;
 }
-header nav .social i {
+.social i {
   color: #09E820;
   margin: 0 4px;
 }
-header nav .social i:hover {
+.social i:hover {
   color: rgb(39, 39, 39);
   transform: scale(2);
+}
+
+.social .call {
+  color: red;
+  font-weight: 900;
+}
+.social .call span {
+  color: rgb(39, 39, 39);
+  font-size: 1.3rem;
 }
 
 .usawa-bana {
@@ -76,22 +64,27 @@ header nav .social i:hover {
 .usawa-bana .overlay-div {
   position: absolute;
   width: 60%;
-  height: 320px;
+  height: 300px;
   background-color: #09E820;
   float: left;
-  font-size: 1.2rem;
   margin-top: 100px;
   border-radius: 8px;
   z-index: 5;
   padding: 20px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.usawa-bana .overlay-div h3 {
+.usawa-bana .overlay-div:hover {
+  overflow: visible;
+}
+.usawa-bana .overlay-div h2 {
   color: #fff;
   font-family: "Times New Roman", Times, serif;
-  text-shadow: 2px 2px rgb(206, 203, 203);
+  text-shadow: 2px 2px rgb(39, 39, 39);
 }
 .usawa-bana .overlay-div p {
-  font-family: pacifico;
+  font-size: 1.2rem;
 }
 .usawa-bana .bana-img {
   width: 50%;
@@ -109,7 +102,7 @@ header nav .social i:hover {
 input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
+  border: 1px solid rgb(206, 203, 203); /* Gray border */
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -120,7 +113,7 @@ input[type=text], select, textarea {
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: #09E820;
-  color: white;
+  color: #fff;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -129,7 +122,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #09E820;
 }
 
 /* Add a background color and some padding around the form */
@@ -162,6 +155,15 @@ form .btn-success {
   background-color: #09E820 !important;
   color: rgb(39, 39, 39);
   font-weight: 600;
+}
+
+.move-top {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  cursor: pointer;
+  display: none;
+  color: rgb(39, 39, 39);
 }
 
 .payment {
@@ -229,12 +231,10 @@ form img {
 }
 
 .full-image img {
-  width: 100vw;
   height: 70vh;
 }
 
 .card-img-top {
-  width: 300px;
   margin: 10px auto;
 }
 
@@ -244,4 +244,162 @@ form img {
 }
 .featured .row {
   display: flex;
+}
+
+@media (min-width: 290px) and (max-width: 425px) {
+  .navbar-brand img {
+    height: 100px;
+  }
+  .nav-link {
+    font-size: 0.7rem;
+  }
+  .social {
+    width: 220px;
+    padding: 8px;
+  }
+  .social p, .social .call, .social .call span {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .social i {
+    margin: 0 8px;
+    font-size: 1rem;
+  }
+  .social i:hover {
+    transform: scale(2);
+  }
+  .usawa-bana {
+    height: 250px;
+    padding: 1px;
+  }
+  .usawa-bana .overlay-div {
+    width: 70%;
+    height: auto;
+    margin-top: 60px;
+    padding: 10px;
+  }
+  .usawa-bana .overlay-div h2 {
+    font-size: 1.2rem;
+  }
+  .usawa-bana .overlay-div p {
+    font-size: 1rem;
+  }
+  .usawa-bana .bana-img img {
+    height: 220px;
+    width: 50vw;
+    padding-right: 0.6vw;
+  }
+  footer .icons i {
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar-brand img {
+    height: 80px;
+  }
+  .nav-link {
+    font-size: 0.7rem;
+  }
+  .social {
+    width: 240px;
+    padding: 8px;
+  }
+  .social p, .social .call, .social .call span {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+  .social i {
+    margin: 0 8px;
+    font-size: 1rem;
+  }
+  .social i:hover {
+    transform: scale(2);
+  }
+  .overlay-div {
+    height: auto;
+  }
+  .overlay-div p {
+    font-size: 0.5rem;
+  }
+  .featured h4 {
+    font-size: 1.3rem;
+  }
+  .full-image img {
+    height: 40vh;
+  }
+  footer .icons i {
+    font-size: 1.4rem;
+    margin: 10px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar-brand img {
+    height: 100px;
+  }
+  .nav-link {
+    font-size: 1.1rem;
+  }
+  .social {
+    width: 360px;
+    padding: 10px;
+  }
+  .social p, .social .call, .social .call span {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+  .social i {
+    margin: 0 8px;
+    font-size: 1.2rem;
+  }
+  .social i:hover {
+    transform: scale(2);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .navbar-brand img {
+    height: 150px;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+  }
+  .social {
+    width: 350px;
+    padding: 15px;
+  }
+  .social p, .social .call, .social .call span {
+    font-size: 1.2rem;
+    font-weight: 900;
+  }
+  .social i {
+    margin: 0 8px;
+    font-size: 1.2rem;
+  }
+  .social i:hover {
+    transform: scale(2);
+  }
+}
+@media (min-width: 1441px) {
+  .navbar-brand img {
+    height: 200px;
+  }
+  .nav-link {
+    font-size: 3rem;
+    margin-right: 1rem;
+  }
+  .social {
+    width: 550px;
+    padding: 15px;
+  }
+  .social p, .social .call, .social .call span {
+    font-size: 2.4rem;
+    font-weight: 900;
+  }
+  .social i {
+    margin: 0 8px;
+    font-size: 2.4rem;
+  }
+  .social i:hover {
+    transform: scale(3);
+  }
 }/*# sourceMappingURL=style.css.map */
