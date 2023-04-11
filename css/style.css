@@ -78,7 +78,7 @@ body {
 .usawa-bana .overlay-div:hover {
   overflow: visible;
 }
-.usawa-bana .overlay-div h2 {
+.usawa-bana .overlay-div h3 {
   color: #fff;
   font-family: "Times New Roman", Times, serif;
   text-shadow: 2px 2px rgb(39, 39, 39);
@@ -157,6 +157,15 @@ form .btn-success {
   font-weight: 600;
 }
 
+.btn-outline-success {
+  outline-color: 4px #09E820 !important;
+  font-weight: 600;
+  color: rgb(39, 39, 39);
+}
+.btn-outline-success:hover {
+  background-color: #09E820 !important;
+}
+
 .move-top {
   position: fixed;
   bottom: 35px;
@@ -181,6 +190,10 @@ form .btn-success {
   max-width: 100px;
   height: 60px;
   margin: 10px 14px;
+}
+
+.payment h4 {
+  text-shadow: 2px 3px 2px rgb(39, 39, 39);
 }
 
 .bg-green {
@@ -231,19 +244,19 @@ form img {
 }
 
 .full-image img {
+  width: 100vw;
   height: 70vh;
+  margin: auto;
+}
+
+.card-title, .what-we-do {
+  background-color: rgb(39, 39, 39);
+  color: rgb(206, 203, 203);
+  padding: 10px;
 }
 
 .card-img-top {
-  margin: 10px auto;
-}
-
-.featured {
-  margin: 10px;
-  align-items: center;
-}
-.featured .row {
-  display: flex;
+  margin: 0 auto;
 }
 
 @media (min-width: 290px) and (max-width: 425px) {

@@ -71,7 +71,7 @@ body {
         &:hover {
             overflow: visible;
         }
-        h2 {
+        h3 {
             color:$white-color;
             font-family: 'Times New Roman', Times, serif;
             text-shadow: 2px 2px $black-color;
@@ -150,8 +150,15 @@ form {
         color: $black-color;
         font-weight: $bold-text;
     }
-   
     
+}
+.btn-outline-success {
+    outline-color: 4px $green-color !important;
+    font-weight: $bold-text;
+    color: $black-color;
+    &:hover{
+        background-color: $green-color !important;
+    }
 }
 .move-top {
     position: fixed;
@@ -176,9 +183,11 @@ form {
     height: 60px;
     margin: 10px 14px;
 }
+.payment h4 {
+    text-shadow: 2px 3px 2px $black-color;
+}
 .bg-green {
-    background-color: $green-color !important;
-    
+    background-color: $green-color !important;  
 }
 footer {
     background-color: $white-color;
@@ -225,19 +234,20 @@ form img {
     height: 40px;
 }
 .full-image img {
+   width: 100vw;
     height: 70vh;
+    margin: auto;
+}
+.card-title, .what-we-do {
+    background-color: $black-color;
+    color: $gray-color;
+    padding: 10px;
 }
 .card-img-top {
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
-.featured{
-    margin: 10px;
-    align-items: center;
-    .row {
-        display: flex;
-    }
-}
+
 
   // 320px — 425px: Mobile devices
 @media (min-width: 290px) and (max-width: 425px) {
