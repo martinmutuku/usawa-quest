@@ -11,29 +11,46 @@
     <title>Volunteer with Us</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/index.html"><img src="/images/logo.png" alt="Usawa Logo Image"></a>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about-us.html">Who We Are</a></li>
-                <li><a href="/what-we-do.html">What We Do</a></li>
-                <li><a href="/donate.html">Donate</a></li>
-                <li><a href="/volunteer.html">Volunteer</a></li>
-                <li><a href="/contact-us.html">Contact Us</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html"><img src="/images/logo.png" alt="Usawa Logo Image"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about-us.html">Who We Are</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/what-we-do.html">What We Do</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/donate.html">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/volunteer.html">Volunteer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact-us.html">Contact Us</a>
+              </li>
             </ul>
-            <div class="social">
-                <p class="heading3">Follow Us</p>
-                    <span><i class="fab fa-facebook"></i></span>
-                    <span ><i class="fab fa-instagram"></i></span>
-                    <span ><i class="fab fa-tiktok"></i></span>
-                    <span ><i class="fab fa-twitter"></i></span>
-                    <span><i class="fab fa-youtube"></i></span>
-                    <p class="heading2"><big>Call: </big> <strong style="font-size: 1.3rem
-                    ;">+254712345678</strong></p>
-            </div>
-        </nav>
-    </header> 
+         
+          </div>
+        </div>
+        <div class="social">
+            <p class="heading3">Follow Us</p>
+                <span><i class="fab fa-facebook"></i></span>
+                <span ><i class="fab fa-instagram"></i></span>
+                <span ><i class="fab fa-tiktok"></i></span>
+                <span ><i class="fab fa-twitter"></i></span>
+                <span><i class="fab fa-youtube"></i></span>
+                <p >Call:  <span>+254712345678</span></p>
+        </div>
+      </nav>
         <div class="usawa-bana">
             <div class=" text-center overlay-div">
                 <h3>BECOME A VOLUNTEER </h3>
@@ -47,7 +64,7 @@
             <div class="donation row mt-5">
                 <div class="fom col-md-8">
         <form action="#">
-            <p>Sign Up </p>
+            <h3 class="text-center m-3">Register</h3>
           
             <div class="row">
                 <div class="fname col-md-6">
@@ -61,30 +78,29 @@
                         <input type="text" name="lastname" id="lastname" size="30">
                     </div>
             </div>
-            <br>
             <div class="row">
-                <div class="fname col-md-6">
+                <div class="phone col-md-6">
                     <label for="phone">Phone Number: </label>
                     <br>
                     <input type="text" name="phone" id="phone" size="30">
                 </div>
-                    <div class="lname col-md-6">
-                        <label for="country">Country: </label>
+                    <div class="country col-md-6">
+                        <label for="lastname">Country: </label>
                         <br>
                         <input type="text" name="country" id="country" size="30">
                     </div>
             </div>
             <br>
-            <label for="email">Email: </label>
+            <label for="email">Email Address: </label>
             <br>
-            <input type="email" name="email" id="email" size="70">
+            <input type="text" name="email" id="email" size="70">
             <br>
             <br>
-                <button type="submit" class="text-center btn btn-success">Signup</button> Or 
-                <a href="#">Login</a>
+            <button type="submit" class="text-center btn btn-success">Signup</button> Or 
+            <a style="color: #09E820; text-decoration: none; font-weight: 700;" href="#">Login</a>
         </form>
     </div>
-    <div class="payment col-md-4 text-center">
+    <div class="payment col-md-12 col-lg-4 col-sm-12 text-center mt-4">
         <h4>Sign up as a Volunteer/Member</h4>
         <P>Make your mark. Become a volunteer/Member. Join us today by signing up to be a Volunteer/Member in your local branch of choice. Fill in the form </P>
         <h4>Key Responsibilities</h4>
@@ -95,6 +111,8 @@
             <li>Respect the rights, beliefs and opinions of the beneficiaries.</li>
         </ul>
     </div>
+        </div>
+
 </main>
 <div class="full-image mt-5">
     <img  src="/images/image-two.jpg" alt="">
