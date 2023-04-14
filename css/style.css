@@ -63,20 +63,14 @@ body {
 }
 .usawa-bana .overlay-div {
   position: absolute;
-  width: 60%;
-  height: 300px;
+  width: 55vw;
+  height: 350px;
   background-color: #09E820;
   float: left;
   margin-top: 100px;
   border-radius: 8px;
   z-index: 5;
   padding: 20px;
-  white-space: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.usawa-bana .overlay-div:hover {
-  overflow: visible;
 }
 .usawa-bana .overlay-div h3 {
   color: #fff;
@@ -87,7 +81,7 @@ body {
   font-size: 1.2rem;
 }
 .usawa-bana .bana-img {
-  width: 50%;
+  width: 50vw;
   float: right;
 }
 .usawa-bana .bana-img img {
@@ -95,11 +89,10 @@ body {
   width: 50vw;
   position: absolute;
   z-index: 2;
-  padding-right: 0.6vw;
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=email], input[type=text], select, textarea {
   width: 100%; /* Full width */
   padding: 12px; /* Some padding */
   border: 1px solid rgb(206, 203, 203); /* Gray border */
@@ -299,8 +292,8 @@ form img {
   }
   .usawa-bana .bana-img img {
     height: 220px;
-    width: 50vw;
-    padding-right: 0.6vw;
+    width: 40vw;
+    padding-right: 0.9vw;
   }
   footer .icons i {
     font-size: 1.4rem;
@@ -329,11 +322,19 @@ form img {
   .social i:hover {
     transform: scale(2);
   }
-  .overlay-div {
-    height: auto;
+  .usawa-bana {
+    height: 300px;
   }
-  .overlay-div p {
-    font-size: 0.5rem;
+  .usawa-bana .overlay-div {
+    height: 250px;
+    margin-top: 50px;
+    overflow: scroll;
+  }
+  .usawa-bana .overlay-div p {
+    font-size: 0.9rem;
+  }
+  .usawa-bana .bana-img img {
+    height: 250px;
   }
   .featured h4 {
     font-size: 1.3rem;

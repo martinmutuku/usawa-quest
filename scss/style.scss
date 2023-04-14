@@ -57,20 +57,14 @@ body {
     padding: 1px;
     .overlay-div {
         position: absolute;
-        width: 60%;
-        height: 300px;
+        width: 55vw;
+        height: 350px;
         background-color: $green-color;
         float: left;
         margin-top: 100px;
         border-radius: 8px;
         z-index:5;
         padding: 20px;
-        white-space: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        &:hover {
-            overflow: visible;
-        }
         h3 {
             color:$white-color;
             font-family: 'Times New Roman', Times, serif;
@@ -81,20 +75,19 @@ body {
         }
     }
     .bana-img {
-        width: 50%;
+        width: 50vw;
         float:right;
         img {
             height: 350px;
             width: 50vw;
             position: absolute;
             z-index: 2;
-            padding-right: 0.6vw;
         }
     }
 }
 // Contact Us Page Form
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=email], input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */ 
     border: 1px solid $gray-color; /* Gray border */
@@ -291,8 +284,8 @@ form img {
     .bana-img {
         img {
             height: 220px;
-            width: 50vw;
-            padding-right: 0.6vw;
+            width: 40vw;
+            padding-right: 0.9vw;
         }
     }
 } 
@@ -326,12 +319,22 @@ footer {
         }
     }  
 }  
- .overlay-div {
-    height: auto;
- p {
-    font-size: .5rem;
-}  
- }
+.usawa-bana {
+    height: 300px;
+    .overlay-div {
+        height: 250px;
+        margin-top: 50px;
+        overflow: scroll;
+        p {
+            font-size: .9rem;
+        }
+    }
+    .bana-img {
+        img {
+            height: 250px;
+        }
+    }
+}
 .featured h4{
     font-size: 1.3rem;
 }
